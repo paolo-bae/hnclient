@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03769AFB4D7BB2071462DD97996BDA03 /* PagerTabViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC4ADB73EBD84CE3FDA486E641BBB7 /* PagerTabViewStyle.swift */; };
+		1379DAF7C46AB56537C7D4E504159A18 /* NavBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA3BA1768E05D209E6A752460505F9B /* NavBarModifier.swift */; };
+		1CCAF4FD8E5F3280AD3237A5ED31D052 /* PagerTabViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BF8B52F57DA9991A64E0DC5A42D47 /* PagerTabViewDelegate.swift */; };
+		2FE0373257AFBA1A9251B269FFCEE133 /* PagerTabStripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B47326EBE1EA271FF951563C2CB9CB /* PagerTabStripView.swift */; };
+		3334F52CD683F83FE184416090AFF76C /* PagerTabStripView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C1E75114534AC49BEEA67215EEBF9E /* PagerTabStripView-dummy.m */; };
+		490EE5292469B14399EE32B1A4C9E5EB /* PagerTabStripView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BA3E035A7A0D994469C3C3014528FD0 /* PagerTabStripView-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		60F2083FD94894544B2AD69A2EF1515D /* Pods-HNClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC86F04102B60036F3D68687A95211D7 /* Pods-HNClient-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6383A0E2918F6995F295A73C1DCEA8F5 /* View+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B4471BBBE9BCC24903CF79D250BA59 /* View+Modifiers.swift */; };
+		6624A07E0AE686AFBF6D81A3E15B0A04 /* NavBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08D8286356BCE1C04AA75017C4DE4B4 /* NavBarItem.swift */; };
+		799E91FB2074B42291B580E2F4284024 /* IndicatorBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7339EAC810DA8401F276AAF2F13AA28 /* IndicatorBarView.swift */; };
+		A4E6794FCB03C77167935E83048F0CC8 /* PagerSetAppearModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C7159E540548683517601036569ED4 /* PagerSetAppearModifier.swift */; };
+		B3A53D2D5806D91A4424CE74E055B3F9 /* PagerTabItemModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70717D08A0702F79308A2429FDEA7B6A /* PagerTabItemModifier.swift */; };
+		C47ADD8A28FE2C8FB196700C925E4D44 /* Pods-HNClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17FDE3019BF6885D53E11E727169DBB7 /* Pods-HNClient-dummy.m */; };
+		D5DADBFD641FE84F3E30A7542EF94ACB /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2D9D6625FE800117D8F0AF612BE40 /* DataStore.swift */; };
+		ECA41EA87809E41317E3C24A222B852F /* FixedSizeNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D9AA756C7A1D2DA1B2314943550C55 /* FixedSizeNavBarView.swift */; };
+		EE0AABFC17B8FF5E813A899A90648ECF /* SegmentedNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C94D0A178CD1849CE41E5FF23E5BD /* SegmentedNavBarView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F2A64EB6C7633FC3281B383C8C79E89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BA23BF48A37E07B01A898EA392A734A;
+			remoteInfo = PagerTabStripView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1678D5207B6079FB6835AD40566B69E1 /* Pods-HNClient */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-HNClient"; path = "libPods-HNClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17FDE3019BF6885D53E11E727169DBB7 /* Pods-HNClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HNClient-dummy.m"; sourceTree = "<group>"; };
+		1E2BF8B52F57DA9991A64E0DC5A42D47 /* PagerTabViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabViewDelegate.swift; path = Sources/PagerTabViewDelegate.swift; sourceTree = "<group>"; };
+		23D8FD89DA95F335AFD5C336774323A4 /* Pods-HNClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HNClient.release.xcconfig"; sourceTree = "<group>"; };
+		360D1E707683ACA18CCDA8F8265CD848 /* Pods-HNClient-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HNClient-acknowledgements.plist"; sourceTree = "<group>"; };
+		36B2D9D6625FE800117D8F0AF612BE40 /* DataStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataStore.swift; path = Sources/DataStore.swift; sourceTree = "<group>"; };
+		4FBC4ADB73EBD84CE3FDA486E641BBB7 /* PagerTabViewStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabViewStyle.swift; path = Sources/PagerTabViewStyle.swift; sourceTree = "<group>"; };
+		54DBE5804A0427F55A0BE81C400F7A02 /* PagerTabStripView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagerTabStripView-prefix.pch"; sourceTree = "<group>"; };
+		6303393FD32E6FD47E27A0048DCB5D4B /* PagerTabStripView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagerTabStripView.debug.xcconfig; sourceTree = "<group>"; };
+		70717D08A0702F79308A2429FDEA7B6A /* PagerTabItemModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabItemModifier.swift; path = Sources/PagerTabItemModifier.swift; sourceTree = "<group>"; };
+		7B33AA3DECFC40FA4AC553701C973978 /* Pods-HNClient-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HNClient-acknowledgements.markdown"; sourceTree = "<group>"; };
+		81B47326EBE1EA271FF951563C2CB9CB /* PagerTabStripView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripView.swift; path = Sources/PagerTabStripView.swift; sourceTree = "<group>"; };
+		924C94D0A178CD1849CE41E5FF23E5BD /* SegmentedNavBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedNavBarView.swift; path = Sources/NavigationBarStyles/SegmentedNavBarView.swift; sourceTree = "<group>"; };
+		972A62E10CBCDF20E2E4F7235C33AC05 /* PagerTabStripView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagerTabStripView.release.xcconfig; sourceTree = "<group>"; };
+		9BA3E035A7A0D994469C3C3014528FD0 /* PagerTabStripView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagerTabStripView-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FF37491ED4B59538C4D37FA3173A5DE /* PagerTabStripView */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = PagerTabStripView; path = libPagerTabStripView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7339EAC810DA8401F276AAF2F13AA28 /* IndicatorBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorBarView.swift; path = Sources/NavigationBarStyles/IndicatorBarView.swift; sourceTree = "<group>"; };
+		B9CDE22A2FAC189698D4AD3C4E81CA60 /* Pods-HNClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HNClient.modulemap"; sourceTree = "<group>"; };
+		BEA3BA1768E05D209E6A752460505F9B /* NavBarModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavBarModifier.swift; path = Sources/NavBarModifier.swift; sourceTree = "<group>"; };
+		C1D9AA756C7A1D2DA1B2314943550C55 /* FixedSizeNavBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FixedSizeNavBarView.swift; path = Sources/NavigationBarStyles/FixedSizeNavBarView.swift; sourceTree = "<group>"; };
+		D08D8286356BCE1C04AA75017C4DE4B4 /* NavBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavBarItem.swift; path = Sources/NavBarItem.swift; sourceTree = "<group>"; };
+		D46BFFD18F3E676E5E57E955D23FC500 /* PagerTabStripView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PagerTabStripView.modulemap; sourceTree = "<group>"; };
+		D6B4471BBBE9BCC24903CF79D250BA59 /* View+Modifiers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+Modifiers.swift"; path = "Sources/View+Modifiers.swift"; sourceTree = "<group>"; };
+		DBAE4F4C44F4841DBF31EA7347B9020F /* Pods-HNClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HNClient.debug.xcconfig"; sourceTree = "<group>"; };
+		F4C7159E540548683517601036569ED4 /* PagerSetAppearModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerSetAppearModifier.swift; path = Sources/PagerSetAppearModifier.swift; sourceTree = "<group>"; };
+		F7C1E75114534AC49BEEA67215EEBF9E /* PagerTabStripView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PagerTabStripView-dummy.m"; sourceTree = "<group>"; };
+		FC86F04102B60036F3D68687A95211D7 /* Pods-HNClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HNClient-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4038C552E1153565121F78FA74C9D3E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FABEC9A4440A81F97211A3AE10405AA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		643884E199E5F2AEF5463B1B9D0622F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5E1306B5C0DE4A0557970CB44B8A6B5 /* PagerTabStripView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		658D4982E1F41848954F47C8E61C01CA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D46BFFD18F3E676E5E57E955D23FC500 /* PagerTabStripView.modulemap */,
+				F7C1E75114534AC49BEEA67215EEBF9E /* PagerTabStripView-dummy.m */,
+				54DBE5804A0427F55A0BE81C400F7A02 /* PagerTabStripView-prefix.pch */,
+				9BA3E035A7A0D994469C3C3014528FD0 /* PagerTabStripView-umbrella.h */,
+				6303393FD32E6FD47E27A0048DCB5D4B /* PagerTabStripView.debug.xcconfig */,
+				972A62E10CBCDF20E2E4F7235C33AC05 /* PagerTabStripView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PagerTabStripView";
+			sourceTree = "<group>";
+		};
+		9B0FBF4A65C54F4017BD071CC0BAB4D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FF37491ED4B59538C4D37FA3173A5DE /* PagerTabStripView */,
+				1678D5207B6079FB6835AD40566B69E1 /* Pods-HNClient */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F0670180DED8430E038720679B3E885 /* Pods-HNClient */ = {
+			isa = PBXGroup;
+			children = (
+				B9CDE22A2FAC189698D4AD3C4E81CA60 /* Pods-HNClient.modulemap */,
+				7B33AA3DECFC40FA4AC553701C973978 /* Pods-HNClient-acknowledgements.markdown */,
+				360D1E707683ACA18CCDA8F8265CD848 /* Pods-HNClient-acknowledgements.plist */,
+				17FDE3019BF6885D53E11E727169DBB7 /* Pods-HNClient-dummy.m */,
+				FC86F04102B60036F3D68687A95211D7 /* Pods-HNClient-umbrella.h */,
+				DBAE4F4C44F4841DBF31EA7347B9020F /* Pods-HNClient.debug.xcconfig */,
+				23D8FD89DA95F335AFD5C336774323A4 /* Pods-HNClient.release.xcconfig */,
+			);
+			name = "Pods-HNClient";
+			path = "Target Support Files/Pods-HNClient";
+			sourceTree = "<group>";
+		};
+		AE05C99A5752660F997BBE7F19C06D7C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F0670180DED8430E038720679B3E885 /* Pods-HNClient */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C5E1306B5C0DE4A0557970CB44B8A6B5 /* PagerTabStripView */ = {
+			isa = PBXGroup;
+			children = (
+				36B2D9D6625FE800117D8F0AF612BE40 /* DataStore.swift */,
+				C1D9AA756C7A1D2DA1B2314943550C55 /* FixedSizeNavBarView.swift */,
+				A7339EAC810DA8401F276AAF2F13AA28 /* IndicatorBarView.swift */,
+				D08D8286356BCE1C04AA75017C4DE4B4 /* NavBarItem.swift */,
+				BEA3BA1768E05D209E6A752460505F9B /* NavBarModifier.swift */,
+				F4C7159E540548683517601036569ED4 /* PagerSetAppearModifier.swift */,
+				70717D08A0702F79308A2429FDEA7B6A /* PagerTabItemModifier.swift */,
+				81B47326EBE1EA271FF951563C2CB9CB /* PagerTabStripView.swift */,
+				1E2BF8B52F57DA9991A64E0DC5A42D47 /* PagerTabViewDelegate.swift */,
+				4FBC4ADB73EBD84CE3FDA486E641BBB7 /* PagerTabViewStyle.swift */,
+				924C94D0A178CD1849CE41E5FF23E5BD /* SegmentedNavBarView.swift */,
+				D6B4471BBBE9BCC24903CF79D250BA59 /* View+Modifiers.swift */,
+				658D4982E1F41848954F47C8E61C01CA /* Support Files */,
+			);
+			name = PagerTabStripView;
+			path = PagerTabStripView;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				643884E199E5F2AEF5463B1B9D0622F1 /* Pods */,
+				9B0FBF4A65C54F4017BD071CC0BAB4D9 /* Products */,
+				AE05C99A5752660F997BBE7F19C06D7C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		059C93C8C5303694E285575BADC4277C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60F2083FD94894544B2AD69A2EF1515D /* Pods-HNClient-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA103B5BEF0AD2318DFDDC2EB4977064 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490EE5292469B14399EE32B1A4C9E5EB /* PagerTabStripView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7BA23BF48A37E07B01A898EA392A734A /* PagerTabStripView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEBC3E358983DBA5B5BF0812F64D8559 /* Build configuration list for PBXNativeTarget "PagerTabStripView" */;
+			buildPhases = (
+				AA103B5BEF0AD2318DFDDC2EB4977064 /* Headers */,
+				78D18D9C0536D25244CF5B5DD8584D04 /* Sources */,
+				4038C552E1153565121F78FA74C9D3E8 /* Frameworks */,
+				1270C74AF96931B423098E49DD6DC0D2 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PagerTabStripView;
+			productName = PagerTabStripView;
+			productReference = 9FF37491ED4B59538C4D37FA3173A5DE /* PagerTabStripView */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C478FEF95864029245B5C6FE6DB8ED64 /* Pods-HNClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE41B509221DDDD1A0012050FB0F23A8 /* Build configuration list for PBXNativeTarget "Pods-HNClient" */;
+			buildPhases = (
+				059C93C8C5303694E285575BADC4277C /* Headers */,
+				6F2F4A0F3F3BA5FE940E9AD33A58F771 /* Sources */,
+				FABEC9A4440A81F97211A3AE10405AA4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CF04EC7FC2338267CA7050B00BEB698 /* PBXTargetDependency */,
+			);
+			name = "Pods-HNClient";
+			productName = "Pods-HNClient";
+			productReference = 1678D5207B6079FB6835AD40566B69E1 /* Pods-HNClient */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9B0FBF4A65C54F4017BD071CC0BAB4D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BA23BF48A37E07B01A898EA392A734A /* PagerTabStripView */,
+				C478FEF95864029245B5C6FE6DB8ED64 /* Pods-HNClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1270C74AF96931B423098E49DD6DC0D2 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/PagerTabStripView/PagerTabStripView.modulemap",
+				"${PODS_ROOT}/Headers/Public/PagerTabStripView/PagerTabStripView-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/PagerTabStripView-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/PagerTabStripView/PagerTabStripView.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/PagerTabStripView/PagerTabStripView-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F2F4A0F3F3BA5FE940E9AD33A58F771 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C47ADD8A28FE2C8FB196700C925E4D44 /* Pods-HNClient-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78D18D9C0536D25244CF5B5DD8584D04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DADBFD641FE84F3E30A7542EF94ACB /* DataStore.swift in Sources */,
+				ECA41EA87809E41317E3C24A222B852F /* FixedSizeNavBarView.swift in Sources */,
+				799E91FB2074B42291B580E2F4284024 /* IndicatorBarView.swift in Sources */,
+				6624A07E0AE686AFBF6D81A3E15B0A04 /* NavBarItem.swift in Sources */,
+				1379DAF7C46AB56537C7D4E504159A18 /* NavBarModifier.swift in Sources */,
+				A4E6794FCB03C77167935E83048F0CC8 /* PagerSetAppearModifier.swift in Sources */,
+				B3A53D2D5806D91A4424CE74E055B3F9 /* PagerTabItemModifier.swift in Sources */,
+				2FE0373257AFBA1A9251B269FFCEE133 /* PagerTabStripView.swift in Sources */,
+				3334F52CD683F83FE184416090AFF76C /* PagerTabStripView-dummy.m in Sources */,
+				1CCAF4FD8E5F3280AD3237A5ED31D052 /* PagerTabViewDelegate.swift in Sources */,
+				03769AFB4D7BB2071462DD97996BDA03 /* PagerTabViewStyle.swift in Sources */,
+				EE0AABFC17B8FF5E813A899A90648ECF /* SegmentedNavBarView.swift in Sources */,
+				6383A0E2918F6995F295A73C1DCEA8F5 /* View+Modifiers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CF04EC7FC2338267CA7050B00BEB698 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PagerTabStripView;
+			target = 7BA23BF48A37E07B01A898EA392A734A /* PagerTabStripView */;
+			targetProxy = 0F2A64EB6C7633FC3281B383C8C79E89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5C16678C24498A2CE0044C16C3DC0103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23D8FD89DA95F335AFD5C336774323A4 /* Pods-HNClient.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HNClient/Pods-HNClient.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DC1AD333CF563A849816BDA5395B57A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBAE4F4C44F4841DBF31EA7347B9020F /* Pods-HNClient.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HNClient/Pods-HNClient.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A5327F3CFE172E4AA4270C51F31DEA05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6303393FD32E6FD47E27A0048DCB5D4B /* PagerTabStripView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/PagerTabStripView/PagerTabStripView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MODULEMAP_FILE = Headers/Public/PagerTabStripView/PagerTabStripView.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = PagerTabStripView;
+				PRODUCT_NAME = PagerTabStripView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF4C3A77B77BCC440370A00FA56DEC17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 972A62E10CBCDF20E2E4F7235C33AC05 /* PagerTabStripView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/PagerTabStripView/PagerTabStripView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MODULEMAP_FILE = Headers/Public/PagerTabStripView/PagerTabStripView.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = PagerTabStripView;
+				PRODUCT_NAME = PagerTabStripView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEBC3E358983DBA5B5BF0812F64D8559 /* Build configuration list for PBXNativeTarget "PagerTabStripView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5327F3CFE172E4AA4270C51F31DEA05 /* Debug */,
+				DF4C3A77B77BCC440370A00FA56DEC17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE41B509221DDDD1A0012050FB0F23A8 /* Build configuration list for PBXNativeTarget "Pods-HNClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DC1AD333CF563A849816BDA5395B57A /* Debug */,
+				5C16678C24498A2CE0044C16C3DC0103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,16 @@
+PODS:
+  - PagerTabStripView (2.1.0)
+
+DEPENDENCIES:
+  - PagerTabStripView (~> 2.0)
+
+SPEC REPOS:
+  trunk:
+    - PagerTabStripView
+
+SPEC CHECKSUMS:
+  PagerTabStripView: a2eb266c3a688d964170d49e8cf490977a8a0a49
+
+PODFILE CHECKSUM: 056f3714c7b8baec9585618bdf5e2217a705d036
+
+COCOAPODS: 1.11.3

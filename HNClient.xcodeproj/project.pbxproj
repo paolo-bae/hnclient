@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		344D4274778CCF39F2D0F731 /* libPods-HNClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 798EAADEBA53F0FD9C49B390 /* libPods-HNClient.a */; };
+		7A54684328805D09000C921E /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A54684228805D09000C921E /* StoryModel.swift */; };
+		7A54684828806E0E000C921E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A54684728806E0E000C921E /* APIManager.swift */; };
 		7AF7120C2880185A00FA940D /* HNClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF7120B2880185A00FA940D /* HNClientApp.swift */; };
 		7AF7120E2880185A00FA940D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF7120D2880185A00FA940D /* ContentView.swift */; };
 		7AF712102880185B00FA940D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AF7120F2880185B00FA940D /* Assets.xcassets */; };
 		7AF712132880185B00FA940D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AF712122880185B00FA940D /* Preview Assets.xcassets */; };
+		7AF7121F288040B000FA940D /* TopStoriesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF7121E288040B000FA940D /* TopStoriesTabView.swift */; };
+		7AF71221288040CB00FA940D /* BestStoriesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF71220288040CB00FA940D /* BestStoriesTabView.swift */; };
+		7AF71223288040D800FA940D /* NewStoriesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF71222288040D800FA940D /* NewStoriesTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D03474BEB43F1B8EF98CB1A /* Pods-HNClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNClient.release.xcconfig"; path = "Target Support Files/Pods-HNClient/Pods-HNClient.release.xcconfig"; sourceTree = "<group>"; };
+		798EAADEBA53F0FD9C49B390 /* libPods-HNClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HNClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A54684228805D09000C921E /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
+		7A54684728806E0E000C921E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		7AF712082880185A00FA940D /* HNClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AF7120B2880185A00FA940D /* HNClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNClientApp.swift; sourceTree = "<group>"; };
 		7AF7120D2880185A00FA940D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7AF7120F2880185B00FA940D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AF712122880185B00FA940D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7AF7121E288040B000FA940D /* TopStoriesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesTabView.swift; sourceTree = "<group>"; };
+		7AF71220288040CB00FA940D /* BestStoriesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestStoriesTabView.swift; sourceTree = "<group>"; };
+		7AF71222288040D800FA940D /* NewStoriesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStoriesTabView.swift; sourceTree = "<group>"; };
+		9DDAA20E3F366F7933EF4265 /* Pods-HNClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNClient.debug.xcconfig"; path = "Target Support Files/Pods-HNClient/Pods-HNClient.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +40,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344D4274778CCF39F2D0F731 /* libPods-HNClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A63A01B4ABE95F25FDF6469 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				798EAADEBA53F0FD9C49B390 /* libPods-HNClient.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A54684128805C8E000C921E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A54684228805D09000C921E /* StoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7AF711FF2880185A00FA940D = {
 			isa = PBXGroup;
 			children = (
 				7AF7120A2880185A00FA940D /* HNClient */,
 				7AF712092880185A00FA940D /* Products */,
+				E9092E2CF5E1CDA12584D2FA /* Pods */,
+				5A63A01B4ABE95F25FDF6469 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,7 +85,10 @@
 			isa = PBXGroup;
 			children = (
 				7AF7120B2880185A00FA940D /* HNClientApp.swift */,
-				7AF7120D2880185A00FA940D /* ContentView.swift */,
+				7AF7121B2880334F00FA940D /* Managers */,
+				7AF7121A2880334900FA940D /* ViewModel */,
+				7AF712192880331900FA940D /* Views */,
+				7A54684128805C8E000C921E /* Model */,
 				7AF7120F2880185B00FA940D /* Assets.xcassets */,
 				7AF712112880185B00FA940D /* Preview Content */,
 			);
@@ -67,6 +103,41 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7AF712192880331900FA940D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7AF7120D2880185A00FA940D /* ContentView.swift */,
+				7AF71220288040CB00FA940D /* BestStoriesTabView.swift */,
+				7AF71222288040D800FA940D /* NewStoriesTabView.swift */,
+				7AF7121E288040B000FA940D /* TopStoriesTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7AF7121A2880334900FA940D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7AF7121B2880334F00FA940D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7A54684728806E0E000C921E /* APIManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E9092E2CF5E1CDA12584D2FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DDAA20E3F366F7933EF4265 /* Pods-HNClient.debug.xcconfig */,
+				0D03474BEB43F1B8EF98CB1A /* Pods-HNClient.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +145,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AF712162880185B00FA940D /* Build configuration list for PBXNativeTarget "HNClient" */;
 			buildPhases = (
+				D2F1D3AE89C37BB3669D4050 /* [CP] Check Pods Manifest.lock */,
 				7AF712042880185A00FA940D /* Sources */,
 				7AF712052880185A00FA940D /* Frameworks */,
 				7AF712062880185A00FA940D /* Resources */,
@@ -132,13 +204,43 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D2F1D3AE89C37BB3669D4050 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HNClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7AF712042880185A00FA940D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AF71221288040CB00FA940D /* BestStoriesTabView.swift in Sources */,
+				7AF7121F288040B000FA940D /* TopStoriesTabView.swift in Sources */,
+				7AF71223288040D800FA940D /* NewStoriesTabView.swift in Sources */,
 				7AF7120E2880185A00FA940D /* ContentView.swift in Sources */,
 				7AF7120C2880185A00FA940D /* HNClientApp.swift in Sources */,
+				7A54684328805D09000C921E /* StoryModel.swift in Sources */,
+				7A54684828806E0E000C921E /* APIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +363,7 @@
 		};
 		7AF712172880185B00FA940D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DDAA20E3F366F7933EF4265 /* Pods-HNClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +393,7 @@
 		};
 		7AF712182880185B00FA940D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D03474BEB43F1B8EF98CB1A /* Pods-HNClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
