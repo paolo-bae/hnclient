@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Story:Codable, Identifiable {
-    //
+struct Story: Codable, Identifiable {
+    //MARK: Define the single story element properties
     let id: Int
     let by: String
     let descendants: Int
@@ -20,7 +20,7 @@ struct Story:Codable, Identifiable {
     let url: String
     
     
-    //Just a sample story for test purposes
+    //MARK: Just a sample story for test purposes
     static var sampleStory = Story(id: 6891,
                                    by: "domp",
                                    descendants: 3,
@@ -31,3 +31,4 @@ struct Story:Codable, Identifiable {
                                    type: "story",
                                    url: "http://www.techcrunch.com/2007/03/28/whispers-about-stealth-startup-vutool/")
 }
+

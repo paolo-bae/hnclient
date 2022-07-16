@@ -2,14 +2,19 @@
 //  TopStoriesTabView.swift
 //  HNClient
 //
-//  Created by Paolo Baeli on 14/07/22.
+//  Created by Paolo Baeli on 15/07/22.
 //
 
 import SwiftUI
 
 struct TopStoriesTabView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                
+            }
+            .navigationTitle("Top stories")
+        }
     }
 }
 

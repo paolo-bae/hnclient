@@ -8,30 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		344D4274778CCF39F2D0F731 /* libPods-HNClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 798EAADEBA53F0FD9C49B390 /* libPods-HNClient.a */; };
-		7A54684328805D09000C921E /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A54684228805D09000C921E /* StoryModel.swift */; };
-		7A54684828806E0E000C921E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A54684728806E0E000C921E /* APIManager.swift */; };
+		7A54684328805D09000C921E /* StoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A54684228805D09000C921E /* StoriesModel.swift */; };
+		7A54684A28817BD4000C921E /* StoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A54684928817BD4000C921E /* StoriesViewModel.swift */; };
+		7A54684F2881A3F6000C921E /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A54684E2881A3F6000C921E /* APIConstants.swift */; };
+		7A5468512881A4D8000C921E /* StoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5468502881A4D8000C921E /* StoriesService.swift */; };
+		7AF0B1E02881B2E5002E7885 /* NewStoriesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF0B1DF2881B2E5002E7885 /* NewStoriesTabView.swift */; };
+		7AF0B1E22881B49A002E7885 /* TopStoriesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF0B1E12881B49A002E7885 /* TopStoriesTabView.swift */; };
+		7AF0B1E42881B4CF002E7885 /* BestStoriesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF0B1E32881B4CF002E7885 /* BestStoriesTabView.swift */; };
 		7AF7120C2880185A00FA940D /* HNClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF7120B2880185A00FA940D /* HNClientApp.swift */; };
 		7AF7120E2880185A00FA940D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF7120D2880185A00FA940D /* ContentView.swift */; };
 		7AF712102880185B00FA940D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AF7120F2880185B00FA940D /* Assets.xcassets */; };
 		7AF712132880185B00FA940D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AF712122880185B00FA940D /* Preview Assets.xcassets */; };
-		7AF7121F288040B000FA940D /* TopStoriesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF7121E288040B000FA940D /* TopStoriesTabView.swift */; };
-		7AF71221288040CB00FA940D /* BestStoriesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF71220288040CB00FA940D /* BestStoriesTabView.swift */; };
-		7AF71223288040D800FA940D /* NewStoriesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF71222288040D800FA940D /* NewStoriesTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D03474BEB43F1B8EF98CB1A /* Pods-HNClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNClient.release.xcconfig"; path = "Target Support Files/Pods-HNClient/Pods-HNClient.release.xcconfig"; sourceTree = "<group>"; };
 		798EAADEBA53F0FD9C49B390 /* libPods-HNClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HNClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A54684228805D09000C921E /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
-		7A54684728806E0E000C921E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		7A54684228805D09000C921E /* StoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesModel.swift; sourceTree = "<group>"; };
+		7A54684928817BD4000C921E /* StoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewModel.swift; sourceTree = "<group>"; };
+		7A54684E2881A3F6000C921E /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		7A5468502881A4D8000C921E /* StoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesService.swift; sourceTree = "<group>"; };
+		7AF0B1DF2881B2E5002E7885 /* NewStoriesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStoriesTabView.swift; sourceTree = "<group>"; };
+		7AF0B1E12881B49A002E7885 /* TopStoriesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesTabView.swift; sourceTree = "<group>"; };
+		7AF0B1E32881B4CF002E7885 /* BestStoriesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestStoriesTabView.swift; sourceTree = "<group>"; };
 		7AF712082880185A00FA940D /* HNClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AF7120B2880185A00FA940D /* HNClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNClientApp.swift; sourceTree = "<group>"; };
 		7AF7120D2880185A00FA940D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7AF7120F2880185B00FA940D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AF712122880185B00FA940D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7AF7121E288040B000FA940D /* TopStoriesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesTabView.swift; sourceTree = "<group>"; };
-		7AF71220288040CB00FA940D /* BestStoriesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestStoriesTabView.swift; sourceTree = "<group>"; };
-		7AF71222288040D800FA940D /* NewStoriesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStoriesTabView.swift; sourceTree = "<group>"; };
 		9DDAA20E3F366F7933EF4265 /* Pods-HNClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNClient.debug.xcconfig"; path = "Target Support Files/Pods-HNClient/Pods-HNClient.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,9 +62,36 @@
 		7A54684128805C8E000C921E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7A54684228805D09000C921E /* StoryModel.swift */,
+				7A54684228805D09000C921E /* StoriesModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7A54684B2881A370000C921E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7A5468502881A4D8000C921E /* StoriesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7A54684C2881A37C000C921E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				7A54684E2881A3F6000C921E /* APIConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		7A54684D2881A39B000C921E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				7AF712192880331900FA940D /* Views */,
+				7AF7121A2880334900FA940D /* ViewModel */,
+				7A54684128805C8E000C921E /* Model */,
+				7A54684B2881A370000C921E /* Services */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 		7AF711FF2880185A00FA940D = {
@@ -85,10 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				7AF7120B2880185A00FA940D /* HNClientApp.swift */,
-				7AF7121B2880334F00FA940D /* Managers */,
-				7AF7121A2880334900FA940D /* ViewModel */,
-				7AF712192880331900FA940D /* Views */,
-				7A54684128805C8E000C921E /* Model */,
+				7A54684D2881A39B000C921E /* Features */,
+				7A54684C2881A37C000C921E /* Constants */,
 				7AF7120F2880185B00FA940D /* Assets.xcassets */,
 				7AF712112880185B00FA940D /* Preview Content */,
 			);
@@ -107,9 +136,9 @@
 			isa = PBXGroup;
 			children = (
 				7AF7120D2880185A00FA940D /* ContentView.swift */,
-				7AF71220288040CB00FA940D /* BestStoriesTabView.swift */,
-				7AF71222288040D800FA940D /* NewStoriesTabView.swift */,
-				7AF7121E288040B000FA940D /* TopStoriesTabView.swift */,
+				7AF0B1DF2881B2E5002E7885 /* NewStoriesTabView.swift */,
+				7AF0B1E12881B49A002E7885 /* TopStoriesTabView.swift */,
+				7AF0B1E32881B4CF002E7885 /* BestStoriesTabView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -117,16 +146,9 @@
 		7AF7121A2880334900FA940D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7A54684928817BD4000C921E /* StoriesViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		7AF7121B2880334F00FA940D /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				7A54684728806E0E000C921E /* APIManager.swift */,
-			);
-			path = Managers;
 			sourceTree = "<group>";
 		};
 		E9092E2CF5E1CDA12584D2FA /* Pods */ = {
@@ -234,13 +256,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AF71221288040CB00FA940D /* BestStoriesTabView.swift in Sources */,
-				7AF7121F288040B000FA940D /* TopStoriesTabView.swift in Sources */,
-				7AF71223288040D800FA940D /* NewStoriesTabView.swift in Sources */,
 				7AF7120E2880185A00FA940D /* ContentView.swift in Sources */,
+				7AF0B1E22881B49A002E7885 /* TopStoriesTabView.swift in Sources */,
+				7A5468512881A4D8000C921E /* StoriesService.swift in Sources */,
 				7AF7120C2880185A00FA940D /* HNClientApp.swift in Sources */,
-				7A54684328805D09000C921E /* StoryModel.swift in Sources */,
-				7A54684828806E0E000C921E /* APIManager.swift in Sources */,
+				7A54684F2881A3F6000C921E /* APIConstants.swift in Sources */,
+				7A54684328805D09000C921E /* StoriesModel.swift in Sources */,
+				7A54684A28817BD4000C921E /* StoriesViewModel.swift in Sources */,
+				7AF0B1E02881B2E5002E7885 /* NewStoriesTabView.swift in Sources */,
+				7AF0B1E42881B4CF002E7885 /* BestStoriesTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
