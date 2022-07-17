@@ -12,24 +12,16 @@ struct NewStoriesTabView: View {
         NavigationView {
             List {
                 ForEach(Story.dummyStories, id: \.id) { item in
-                    VStack(alignment: .leading, spacing: 8) {
-                        HStack(alignment: .leading) {
-                            Image(systemName: "papernews")
-                            Text(item.title)
-                        }
-                        HStack {
-                            Text("By: \(item.by)")
-                            Spacer()
-                            Text("UpVotes: \(item.score)")
-                        }
+                    StoryView(item: item)
                     }
                 }
-            }
             .navigationTitle("New stories")
+            }
+            
         }
         
     }
-}
+
 
 struct NewStoriesTabView_Previews: PreviewProvider {
     static var previews: some View {
