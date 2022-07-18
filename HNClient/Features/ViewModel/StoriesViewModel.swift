@@ -33,22 +33,40 @@ protocol StoryViewModel: ObservableObject {
 final class StoryViewModelImpl: StoryViewModel {
     
     let api = StoriesServiceImpl()
-    private(set) var storiesIDs: [Int] = []
+    @Published private(set) var storiesIDs: [Int] = []
     @Published private(set) var stories: [Story] = []
-    
+    var handledTask: Task<(), Error>? = nil
+    init() {
+        
+    }
+   /*
+    func getStories2(from storySource: StorySource) {
+        if (handledTask != nil) {
+            handledTask?.cancel()
+        }
+        
+        handledTask = getStories(from: storySource)
+    }*/
     func getStories(from storySource: StorySource) async {
         do {
-            
             self.storiesIDs = try await api.fetchIDs(endPoint: storySource.endPointConversion().url)
             
             for storyID in storiesIDs {
-                self.stories = try await api.fetchStory(endPoint: EndPoint.story(storyID).url)
-                
+                do {
+                    let story = try await api.fetchStory(endPoint: EndPoint.story(storyID).url)
+                    self.stories.append(story)
+                } catch {
+                    print(error)
+                }
             }
         } catch {
             print(error)
         }
         
+    }
+    
+    func updateStories() {
+        self.storiesIDs.removeAll()
     }
     
 }

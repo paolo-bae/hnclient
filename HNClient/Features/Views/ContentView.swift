@@ -9,8 +9,7 @@ import SwiftUI
 import PagerTabStripView
 
 struct ContentView: View {
-    @State private var storySource: StorySource = .newStories
-    @State private var stories = [Story]()
+
     @State private var selection = 1
     @StateObject private var vm = StoryViewModelImpl()
     

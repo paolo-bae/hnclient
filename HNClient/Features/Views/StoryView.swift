@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StoryView: View {
-    let item: Story
+    let story: Story
     
     private func makeAttributedString(title: String, label:String) -> AttributedString {
         
@@ -27,13 +27,13 @@ struct StoryView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
-                Image(systemName: "papernews")
-                Text(item.title)
+                Image(systemName: "newspaper")
+                Text(story.title)
             }
             HStack {
-                Text(makeAttributedString(title:"By:", label: item.by))
+                Text(makeAttributedString(title:"By:", label: story.by))
                 Spacer()
-                Text(makeAttributedString(title:"Score:", label: "\(item.score)"))
+                Text(makeAttributedString(title:"Score:", label: "\(story.score)"))
             }
         }
         .padding()
@@ -44,6 +44,6 @@ struct StoryView: View {
 
 struct StoryView_Previews: PreviewProvider {
     static var previews: some View {
-        StoryView(item: Story.dummyStories.first!)
+        StoryView(story: Story.dummyStories.first!)
     }
 }
