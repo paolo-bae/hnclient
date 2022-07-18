@@ -7,14 +7,48 @@
 
 import Foundation
 import SwiftUI
-/*
-final class ViewModel: ObservableObject {
+
+public enum StorySource: String, CaseIterable, Codable {
+    case newStories = "New Stories"
+    case topStories = "Top Stories"
+    case bestStories = "Best Stories"
     
-    @Published var storyList: [Story]
+    func endPointConversion() -> EndPoint {
+        switch self {
+        case .newStories:
+            return .newStories
+        case .topStories:
+            return .topStories
+        case .bestStories:
+            return .bestStories
+        }
+    }
+}
+
+protocol StoryViewModel: ObservableObject {
+    func getStories(from storySource: StorySource) async
+}
+
+@MainActor
+final class StoryViewModelImpl: StoryViewModel {
     
-    init() {
-        self.storyList = storyManager.fetchStoryData()
+    let api = StoriesServiceImpl()
+    private(set) var storiesIDs: [Int] = []
+    @Published private(set) var stories: [Story] = []
+    
+    func getStories(from storySource: StorySource) async {
+        do {
+            
+            self.storiesIDs = try await api.fetchIDs(endPoint: storySource.endPointConversion().url)
+            
+            for storyID in storiesIDs {
+                self.stories = try await api.fetchStory(endPoint: EndPoint.story(storyID).url)
+                
+            }
+        } catch {
+            print(error)
+        }
+        
     }
     
 }
-*/

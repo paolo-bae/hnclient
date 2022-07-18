@@ -7,10 +7,27 @@
 
 import Foundation
 
-enum APIConstatants {
-    static let baseUrl = "https://hacker-news.firebaseio.com/v0"
+enum APIConstants {
+    static var baseUrl = URL(string: "https://hacker-news.firebaseio.com/v0")!
 }
 
-enum StoryType {
-    case newStories, topStories, bestStories
+enum EndPoint {
+    
+    case story(Int)
+    case newStories
+    case topStories
+    case bestStories
+    
+    var url: URL {
+        switch self {
+        case .story(let id):
+            return APIConstants.baseUrl.appendingPathComponent("/item/\(id).json")
+        case .newStories:
+            return APIConstants.baseUrl.appendingPathComponent("/newstories.json")
+        case .topStories:
+            return APIConstants.baseUrl.appendingPathComponent("/topstories.json")
+        case .bestStories:
+            return APIConstants.baseUrl.appendingPathComponent("/beststories.json")
+        }
+    }
 }

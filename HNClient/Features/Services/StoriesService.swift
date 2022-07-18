@@ -8,35 +8,25 @@
 import Foundation
 
 protocol StoriesService {
-    func fetch() async throws -> [Story]
-}
-
-protocol StoriesIDsService {
-    func fetchIDs(_ type: StoryType) async throws -> [Int]
-}
-
-final class StoriesIDServiceImpl: StoriesIDsService {
+    //MARK: API call for retrieving a sigle story details by its ID.
+    func fetchStory(endPoint: URL) async throws -> [Story]
     
-    func fetchIDs(_ type: StoryType) async throws -> [Int] {
-        var appendToUrl: String = ""
-        let urlSession = URLSession.shared
-        
-        switch type {
-        case .newStories:
-            appendToUrl = "/newstories.json"
-            break
-        case .bestStories:
-            appendToUrl = "/beststories.json"
-            break
-        case .topStories:
-            appendToUrl = "/topstories.jsno"
-            break
-        }
-        
-        let url = URL(string: APIConstatants.baseUrl.appending(appendToUrl))
-        let (data, _) = try await urlSession.data(from: url!)
-        
+    //MARK: API call for retrieving all the stories of a specified list
+    func fetchIDs(endPoint: URL) async throws -> [Int]
+}
+
+
+final class StoriesServiceImpl: StoriesService {
+    let urlSession = URLSession.shared
+    
+    func fetchIDs(endPoint: URL) async throws -> [Int] {
+        let (data, _) = try await urlSession.data(from: endPoint)
         return try JSONDecoder().decode([Int].self, from: data)
+    }
+    
+    func fetchStory(endPoint: URL) async throws -> [Story] {
+        let (data, _) = try await urlSession.data(from: endPoint)
+        return try JSONDecoder().decode([Story].self, from: data)
     }
     
 }

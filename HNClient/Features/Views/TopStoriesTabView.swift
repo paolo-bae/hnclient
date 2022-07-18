@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct TopStoriesTabView: View {
+    @EnvironmentObject var vm: StoryViewModelImpl
+    
     var body: some View {
         NavigationView {
             List {
-                ForEach(Story.dummyStories, id: \.id) { item in
+                ForEach(vm.stories, id: \.id) { item in
                     StoryView(item: item)
                     }
             }
