@@ -4,7 +4,7 @@ A simple **Hacker News reader** for **iOS** built with **SwifUI**.
 
 HNClient displays the new, top and best stories loaded directly from the **official Hacker News API (https://github.com/HackerNews/API)**.
 
-![alt text](https://github.com/paolo-bae/swftUI-HNClient/blob/main/ScreenShots/BestStoriesFeed.PNG)
+![alt text](https://github.com/paolo-bae/swftUI-HNClient/blob/main/ScreenShots/ScreenShots.JPG)
 
 ### Features:
 - displays New, Top and Best stories with score and the user that loaded them 
