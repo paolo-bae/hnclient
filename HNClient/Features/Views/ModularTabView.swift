@@ -26,13 +26,13 @@ struct ModularTabView: View {
             List {
                 ForEach(vm.stories, id: \.id) { story in
                     NavigationLink(destination: StoryArticleWebView(url: URL(string: story.url)!, loading: $showLoadingArticle), label: {
-                    Button {
-                        showArticle.toggle()
-                    } label: {
-                        StoryView(story: story)
-                    }
-                })
-            }
+                        Button {
+                            showArticle.toggle()
+                        } label: {
+                            StoryView(story: story)
+                        }
+                    })
+                }
             }
             .navigationTitle(tabPageTitle)
             .task {
@@ -46,8 +46,6 @@ struct ModularTabView: View {
         }
         
         if showArticle {
-            //Color.black.opacity(0.3).ignoresSafeArea()
-            
             StoryArticleWebView(url: selectedStoryUrl!, loading: $showLoadingArticle)
                 .overlay(showLoadingArticle ? ProgressView().toAnyView(): EmptyView().toAnyView())
         }

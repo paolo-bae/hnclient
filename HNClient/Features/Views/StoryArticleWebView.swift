@@ -6,10 +6,9 @@
 //
 
 import SwiftUI
-import Foundation
 import WebKit
 
-/// Custom WKWebView controller to load story article
+
 struct StoryArticleWebView: UIViewRepresentable {
     
     var url: URL
@@ -59,10 +58,12 @@ class WebViewCoordinator: NSObject, WKNavigationDelegate {
     }
     
 }
+
+
 /*
 struct StoryArticleWebView_Previews: PreviewProvider {
     static var previews: some View {
-        StoryArticleWebView(url: URL(string: "https://olwal.com/hidden")!)
+        StoryArticleWebView(url: URL(string: "https://olwal.com/hidden")!, loading: )
     }
 }
 */
