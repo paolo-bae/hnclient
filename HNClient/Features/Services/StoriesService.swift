@@ -8,11 +8,10 @@
 import Foundation
 
 protocol StoriesService {
-    //MARK: API call for retrieving a sigle story details by its ID.
-    func fetchStory(endPoint: URL) async throws -> Story
-    
     //MARK: API call for retrieving all the stories of a specified list
     func fetchIDs(endPoint: URL) async throws -> [Int]
+    //MARK: API call for retrieving a sigle story details by its ID.
+    func fetchStory(endPoint: URL) async throws -> Story
 }
 
 

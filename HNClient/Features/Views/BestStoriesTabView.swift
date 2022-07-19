@@ -10,6 +10,7 @@ import SwiftUI
 struct BestStroriesTabView: View {
     @State private var storySource: StorySource = .bestStories
     @State private var selectedStory: Story?
+    @State private var showStoryArticleWebView: Bool = false
     
     @EnvironmentObject var vm: StoryViewModelImpl
     
@@ -24,13 +25,11 @@ struct BestStroriesTabView: View {
                     }
                 }
             }
-            .navigationTitle("Top stories")
+            .navigationTitle("Best stories")
             .task {
                 await vm.getStories(from: storySource)
             }
             .refreshable {
-                //MARK: Remove all entries when pulling the list
-                vm.updateStories()
                 //MARK: Call API for repopulate an updated list
                 await vm.getStories(from: storySource)
             }
@@ -40,6 +39,6 @@ struct BestStroriesTabView: View {
 
 struct BestStroriesTabView_Previews: PreviewProvider {
     static var previews: some View {
-        BestStroriesTabView()
+        BestStroriesTabView().environmentObject(StoryViewModelImpl())
     }
 }

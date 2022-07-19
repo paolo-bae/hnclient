@@ -36,7 +36,7 @@ struct StoryView: View {
                 Text(makeAttributedString(title:"Score:", label: "\(story.score)"))
             }
         }
-        .padding()
+        .padding(.vertical)
     }
 }
 

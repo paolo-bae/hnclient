@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		344D4274778CCF39F2D0F731 /* libPods-HNClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 798EAADEBA53F0FD9C49B390 /* libPods-HNClient.a */; };
+		7A38867328863E95000F14EC /* StoryArticleWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38867228863E95000F14EC /* StoryArticleWebView.swift */; };
+		7A38867528863FFD000F14EC /* ModularTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38867428863FFD000F14EC /* ModularTabView.swift */; };
 		7A54684328805D09000C921E /* StoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A54684228805D09000C921E /* StoriesModel.swift */; };
 		7A54684A28817BD4000C921E /* StoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A54684928817BD4000C921E /* StoriesViewModel.swift */; };
 		7A54684F2881A3F6000C921E /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A54684E2881A3F6000C921E /* APIConstants.swift */; };
 		7A5468512881A4D8000C921E /* StoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5468502881A4D8000C921E /* StoriesService.swift */; };
 		7A5FFC852884912500B4702F /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5FFC842884912500B4702F /* StoryView.swift */; };
-		7AF0B1E02881B2E5002E7885 /* NewStoriesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF0B1DF2881B2E5002E7885 /* NewStoriesTabView.swift */; };
-		7AF0B1E22881B49A002E7885 /* TopStoriesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF0B1E12881B49A002E7885 /* TopStoriesTabView.swift */; };
-		7AF0B1E42881B4CF002E7885 /* BestStoriesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF0B1E32881B4CF002E7885 /* BestStoriesTabView.swift */; };
 		7AF7120C2880185A00FA940D /* HNClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF7120B2880185A00FA940D /* HNClientApp.swift */; };
 		7AF7120E2880185A00FA940D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF7120D2880185A00FA940D /* ContentView.swift */; };
 		7AF712102880185B00FA940D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AF7120F2880185B00FA940D /* Assets.xcassets */; };
@@ -25,14 +24,14 @@
 /* Begin PBXFileReference section */
 		0D03474BEB43F1B8EF98CB1A /* Pods-HNClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNClient.release.xcconfig"; path = "Target Support Files/Pods-HNClient/Pods-HNClient.release.xcconfig"; sourceTree = "<group>"; };
 		798EAADEBA53F0FD9C49B390 /* libPods-HNClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HNClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A3886712885DA72000F14EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7A38867228863E95000F14EC /* StoryArticleWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryArticleWebView.swift; sourceTree = "<group>"; };
+		7A38867428863FFD000F14EC /* ModularTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModularTabView.swift; sourceTree = "<group>"; };
 		7A54684228805D09000C921E /* StoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesModel.swift; sourceTree = "<group>"; };
 		7A54684928817BD4000C921E /* StoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewModel.swift; sourceTree = "<group>"; };
 		7A54684E2881A3F6000C921E /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		7A5468502881A4D8000C921E /* StoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesService.swift; sourceTree = "<group>"; };
 		7A5FFC842884912500B4702F /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
-		7AF0B1DF2881B2E5002E7885 /* NewStoriesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStoriesTabView.swift; sourceTree = "<group>"; };
-		7AF0B1E12881B49A002E7885 /* TopStoriesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesTabView.swift; sourceTree = "<group>"; };
-		7AF0B1E32881B4CF002E7885 /* BestStoriesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestStoriesTabView.swift; sourceTree = "<group>"; };
 		7AF712082880185A00FA940D /* HNClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AF7120B2880185A00FA940D /* HNClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNClientApp.swift; sourceTree = "<group>"; };
 		7AF7120D2880185A00FA940D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +116,7 @@
 		7AF7120A2880185A00FA940D /* HNClient */ = {
 			isa = PBXGroup;
 			children = (
+				7A3886712885DA72000F14EC /* Info.plist */,
 				7AF7120B2880185A00FA940D /* HNClientApp.swift */,
 				7A54684D2881A39B000C921E /* Features */,
 				7A54684C2881A37C000C921E /* Constants */,
@@ -138,10 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				7AF7120D2880185A00FA940D /* ContentView.swift */,
-				7AF0B1DF2881B2E5002E7885 /* NewStoriesTabView.swift */,
-				7AF0B1E12881B49A002E7885 /* TopStoriesTabView.swift */,
-				7AF0B1E32881B4CF002E7885 /* BestStoriesTabView.swift */,
+				7A38867428863FFD000F14EC /* ModularTabView.swift */,
 				7A5FFC842884912500B4702F /* StoryView.swift */,
+				7A38867228863E95000F14EC /* StoryArticleWebView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -260,15 +259,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AF7120E2880185A00FA940D /* ContentView.swift in Sources */,
-				7AF0B1E22881B49A002E7885 /* TopStoriesTabView.swift in Sources */,
+				7A38867528863FFD000F14EC /* ModularTabView.swift in Sources */,
 				7A5468512881A4D8000C921E /* StoriesService.swift in Sources */,
 				7AF7120C2880185A00FA940D /* HNClientApp.swift in Sources */,
 				7A54684F2881A3F6000C921E /* APIConstants.swift in Sources */,
 				7A54684328805D09000C921E /* StoriesModel.swift in Sources */,
 				7A54684A28817BD4000C921E /* StoriesViewModel.swift in Sources */,
-				7AF0B1E02881B2E5002E7885 /* NewStoriesTabView.swift in Sources */,
 				7A5FFC852884912500B4702F /* StoryView.swift in Sources */,
-				7AF0B1E42881B4CF002E7885 /* BestStoriesTabView.swift in Sources */,
+				7A38867328863E95000F14EC /* StoryArticleWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +399,7 @@
 				DEVELOPMENT_TEAM = 9FEWR2KLB5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HNClient/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -431,6 +430,7 @@
 				DEVELOPMENT_TEAM = 9FEWR2KLB5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HNClient/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

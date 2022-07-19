@@ -15,17 +15,17 @@ struct ContentView: View {
     
     var body: some View {
             TabView(selection: $selection) {
-                NewStoriesTabView().environmentObject(vm)
+                ModularTabView(storySource: .newStories, tabPageTitle: "New stories").environmentObject(vm)
                     .tabItem {
                         Image(systemName: "newspaper")
                         Text("New")
                     }
-                TopStoriesTabView().environmentObject(vm)
+                ModularTabView(storySource: .topStories, tabPageTitle: "Top stories").environmentObject(vm)
                     .tabItem {
                         Image(systemName: "arrow.up")
                         Text("Top")
                     }
-                BestStroriesTabView().environmentObject(vm)
+                ModularTabView(storySource: .bestStories, tabPageTitle: "Best stories").environmentObject(vm)
                     .tabItem {
                         Image(systemName: "star")
                         Text("Best")

@@ -8,5 +8,4 @@ target 'HNClient' do
   # use_frameworks!
 
   # Pods for HNClient
-  pod 'PagerTabStripView', '~> 2.0'
 end

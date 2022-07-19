@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import Combine
 
 public enum StorySource: String, CaseIterable, Codable {
     case newStories = "New Stories"
@@ -39,15 +40,12 @@ final class StoryViewModelImpl: StoryViewModel {
     init() {
         
     }
-   /*
-    func getStories2(from storySource: StorySource) {
-        if (handledTask != nil) {
-            handledTask?.cancel()
-        }
-        
-        handledTask = getStories(from: storySource)
-    }*/
+    
     func getStories(from storySource: StorySource) async {
+        
+        stories.removeAll()
+        storiesIDs.removeAll()
+        
         do {
             self.storiesIDs = try await api.fetchIDs(endPoint: storySource.endPointConversion().url)
             
@@ -63,10 +61,6 @@ final class StoryViewModelImpl: StoryViewModel {
             print(error)
         }
         
-    }
-    
-    func updateStories() {
-        self.storiesIDs.removeAll()
     }
     
 }
