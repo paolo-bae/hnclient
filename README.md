@@ -9,7 +9,7 @@ HNClient displays the new, top and best stories loaded directly from the **offic
 ### Features:
 - displays New, Top and Best stories with score and the user that loaded them 
 - has pull-to refresh in every list
-- you can read every article
+- you can easily access every article you want
 
 It was made for learning and testing purposes.
 
