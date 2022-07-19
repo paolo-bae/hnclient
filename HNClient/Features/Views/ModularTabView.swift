@@ -19,6 +19,7 @@ struct ModularTabView: View {
     @State var tabPageTitle: String
     @State var showArticle: Bool = false
     @State var showLoadingArticle: Bool = false
+    @State var listAlreadyLoaded: Bool = false
     @EnvironmentObject var vm: StoryViewModelImpl
     
     var body: some View {
@@ -26,11 +27,7 @@ struct ModularTabView: View {
             List {
                 ForEach(vm.stories, id: \.id) { story in
                     NavigationLink(destination: StoryArticleWebView(url: URL(string: story.url)!, loading: $showLoadingArticle), label: {
-                        Button {
-                            showArticle.toggle()
-                        } label: {
-                            StoryView(story: story)
-                        }
+                        StoryView(story: story)
                     })
                 }
             }
@@ -44,14 +41,7 @@ struct ModularTabView: View {
                 await vm.getStories(from: storySource)
             }
         }
-        
-        if showArticle {
-            StoryArticleWebView(url: selectedStoryUrl!, loading: $showLoadingArticle)
-                .overlay(showLoadingArticle ? ProgressView().toAnyView(): EmptyView().toAnyView())
-        }
-        
     }
-    
 }
 
 struct ModularTabView_Previews: PreviewProvider {
