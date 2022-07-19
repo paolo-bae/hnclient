@@ -29,6 +29,7 @@ struct StoryView: View {
             HStack {
                 Image(systemName: "newspaper")
                 Text(story.title)
+                    .bold()
             }
             HStack {
                 Text(makeAttributedString(title:"By:", label: story.by))

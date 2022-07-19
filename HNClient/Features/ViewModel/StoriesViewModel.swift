@@ -36,7 +36,7 @@ final class StoryViewModelImpl: StoryViewModel {
     let api = StoriesServiceImpl()
     @Published private(set) var storiesIDs: [Int] = []
     @Published private(set) var stories: [Story] = []
-    var handledTask: Task<(), Error>? = nil
+    
     init() {
         
     }
